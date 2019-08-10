@@ -1,0 +1,13 @@
+Playground {
+    Exp = AddExp
+
+    AddExp =  AddExp "+" MulExp -- plus 
+            | AddExp "-" MulExp -- minus 
+            | MulExp
+
+    MulExp =  MulExp "*" number -- multip
+            | MulExp "/" number -- division
+            | number
+
+    number = digit+
+}
